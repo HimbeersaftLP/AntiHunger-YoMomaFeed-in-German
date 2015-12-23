@@ -3,7 +3,7 @@
  ACHTUNG:Dieses Plugin funktioniert nur mit ImagicalMine und NICHT mit dem normalen PocketMine. 
 
 Befehle:
- /feed - Permission: feedme.feed
+ /feed - Permission: feedme.feed              
  /feed (Spieler) - Permission: feedme.other 
 
 Original PlugIn forked from TomasOlsson/YoMomaFeed. 
