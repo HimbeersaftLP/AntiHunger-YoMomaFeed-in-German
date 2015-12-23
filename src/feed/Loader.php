@@ -9,7 +9,7 @@ use pocketmine\Server;
 class Loader extends PluginBase{
     
     public function onEnable() {
-        $this->getLogger()->notice("Loading that food sheit!");
+        $this->getLogger()->notice("Endlich keine Hungersnot mehr!");
         
         //commands
         $this->getServer()->getCommandMap()->register("feed", new feed($this));
