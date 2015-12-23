@@ -5,3 +5,6 @@
 Befehle:
  /feed - Permission: feedme.feed
  /feed (Spieler) - Permission: feedme.other 
+
+Original PlugIn forked from TomasOlsson/YoMomaFeed. 
+Translated to German by HimbeersaftLP.
