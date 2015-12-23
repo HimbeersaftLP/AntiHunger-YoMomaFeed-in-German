@@ -9,7 +9,7 @@ use feed\Loader;
 class feed extends cmd\Command implements cmd\PluginIdentifiableCommand{
   private $plugin;
   public function __construct(Loader $plugin){
-    parent::__construct("feed", "Feed that face!", "/feed (player)", ["food", "eat"]);
+    parent::__construct("feed", "Jemanden fuettern!", "/feed (player)", ["food", "eat"]);
     $this->setPermission("feedme.feed");
     $this->plugin = $plugin;
   }
@@ -24,18 +24,18 @@ class feed extends cmd\Command implements cmd\PluginIdentifiableCommand{
                 $player = $this->plugin->getServer()->getPlayer($name);
                 if($player instanceof Player){ 
                     // Send some pointless messeges
-                    $sender->sendMessage(TextFormat::BLUE . "Yo mama fed ".$name." face!");
-                    $player->sendMessage(TextFormat::BLUE . $sender->getName()." mama fed ur face!");
+                    $sender->sendMessage(TextFormat::BLUE . "Der Spieler ".$name." wurde gefuettert!");
+                    $player->sendMessage(TextFormat::BLUE . $sender->getName()." hat dich gefuettert!");
                     // set food to 20
                     $player->setFood(20);
                     return true;
-                } else{ $sender->sendMessage(TextFormat::BLUE . "Player ain't online!"); return true; }  
-            } else { $sender->sendMessage(TextFormat::DARK_RED . "Ain't nobody got that permissions!"); return true; }
+                } else{ $sender->sendMessage(TextFormat::BLUE . "Spieler ist nicht online!"); return true; }  
+            } else { $sender->sendMessage(TextFormat::DARK_RED . "Du hast nicht die Berechtigung zum fuettern!"); return true; }
         } else { // If args is missing set your own food to 20
-            $sender->sendMessage(TextFormat::BLUE . "Yo mama fed ur face!");
+            $sender->sendMessage(TextFormat::BLUE . "Du wurdest gefuettert!");
             $sender->setFood(20);
             return true;   
         }
-    } else { $sender->sendMessage(TextFormat::DARK_RED . "Nah not gonna feed that console"); return true; }
+    } else { $sender->sendMessage(TextFormat::DARK_RED . "Du kannst die Konsole nicht füttern!"); return true; }
   }
 }
