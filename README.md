@@ -1,7 +1,7 @@
-# Feed plugin for ImagicalMine(Pocketmine)
+# Fütterungs Plugin für ImagicalMine(Pocketmine)
 
- NOTE: This plugin requires you to be running ImagicalMine. It will not work with default PocketMine. 
+ ACHTUNG:Dieses Plugin funktioniert nur mit ImagicalMine und NICHT mit dem normalen PocketMine. 
 
-Commands:
- /feed - feedme.feed
- /feed (player) - feedme.other 
+Befehle:
+ /feed - Permission: feedme.feed
+ /feed (Spieler) - Permission: feedme.other 
