@@ -1,13 +1,13 @@
-    name: feed
+    name: AntiHung
     main: feed\Loader
     version: 1.0.0
     api: 1.12.0
 
     permission:
         feedme.feed:
-            description: "Feed that face permission"
+            description: "Berechtigung zum fuettern"
             default: op
             children:
                 feedme.other:
-                    description: "Feed others face permission"
+                    description: "Berechtigung andere zu fuettern"
                     default: op
