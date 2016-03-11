@@ -1,0 +1,1 @@
+Lade dir die Datei 'AntiHung.phar' herunter und gib sie in den Plugin Order deines Server.
